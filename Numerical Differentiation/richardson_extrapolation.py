@@ -22,7 +22,9 @@ class Differentiation:
 
         return fi_list[0]
 
-def f(x):
-    return x**x
 
-print(Differentiation.differentiate(2, f, h=10, error_order=14))
+if __name__ == '__main__':
+    def f(x):
+        return x**x
+
+    print(Differentiation.differentiate(2, f, h=10, error_order=14))
